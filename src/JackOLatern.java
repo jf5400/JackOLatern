@@ -12,19 +12,19 @@ public class JackOLatern {
 
     public void fill(String str){
         for(int i=0; i<faceFeatures.length; i++){
-            for(int j=0; j<faceFeatures[j].length; i++){
+            for(int j=0; j<faceFeatures[i].length; j++){
                 faceFeatures[i][j]=str;
             }
         }
     }
 
-    String[][] newface=new String[][];
-    public String[][] toString() {
+    public String toString() {
+        String newface="";
         for(int i=0; i<faceFeatures.length; i++){
-            for(int j=0; j<faceFeatures[j].length; i++){
-                System.out.println(faceFeatures[i][j]);
+            for(int j=0; j<faceFeatures[i].length; j++){
+                newface+=(faceFeatures[i][j]);
             }
-            System.out.println("\n");
+            newface+=("\n");
         }
         return newface;
     }
